@@ -1,0 +1,19 @@
+type Victim {
+  name: String @fake(type: fullName)
+  nicknames: [String] @fake(type: productName)
+  avatar: String @fake(type: avatarUrl)
+  score: Int @fake(type: money)
+  pwns: [Pwn]
+}
+
+type Pwn {
+  timestamp: Int @fake(type: recentDate)
+  nickname: String @fake(type: productName)
+  comment: String @fake(type: hackerPhrase)
+  victim: Victim
+}
+
+type Query {
+  victim(id: ID): Victim
+  allVictims: [Victim!]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "corpwn",
+  "version": "1.0.0",
+  "description": "count how many times your coworkers leave their workstations unlocked",
+  "main": "web/src/index.js",
+  "repository": "https://github.com/jmagrippis/corpwn",
+  "author": "Johnny Magrippis <j@magrippis.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "graphql-faker"
+  },
+  "devDependencies": {
+    "graphql-faker": "^1.7.5",
+    "prettier": "^1.14.2"
+  }
+}
