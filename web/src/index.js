@@ -2,8 +2,6 @@ import gql from 'graphql-tag'
 
 import { client } from './graphql'
 
-console.log('this loads!')
-
 const div = document.createElement('div')
 div.id = 'root'
 document.body.appendChild(div)
