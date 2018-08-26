@@ -1,0 +1,26 @@
+{
+  "name": "corpwn",
+  "version": "1.0.0",
+  "description": "web frontend of corpwn app",
+  "main": "src/index.js",
+  "repository": "https://github.com/jmagrippis/corpwn",
+  "author": "Johnny Magrippis <j@magrippis.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "NODE_ENV=development webpack-dev-server"
+  },
+  "dependencies": {
+    "apollo-boost": "^0.1.14",
+    "graphql": "^0.13.2",
+    "react-apollo": "^2.1.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-rc.3",
+    "@babel/preset-env": "^7.0.0-rc.3",
+    "babel-loader": "^8.0.0-beta",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.6"
+  }
+}

@@ -7,7 +7,7 @@ type Victim {
 }
 
 type Pwn {
-  timestamp: Int @fake(type: recentDate)
+  timestamp: String @fake(type: recentDate)
   nickname: String @fake(type: productName)
   comment: String @fake(type: hackerPhrase)
   victim: Victim
