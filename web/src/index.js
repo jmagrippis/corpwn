@@ -1,26 +1,11 @@
+import React from 'react'
 import gql from 'graphql-tag'
+import { render } from 'react-dom'
 
-import { client } from './graphql'
+import App from './components/App'
 
-const div = document.createElement('div')
-div.id = 'root'
-document.body.appendChild(div)
+const root = document.createElement('div')
+root.id = 'root'
+document.body.appendChild(root)
 
-client
-  .query({
-    query: gql`
-      {
-        victim(id: "dis guy") {
-          name
-          pwns {
-            timestamp
-            nickname
-            comment
-          }
-        }
-      }
-    `
-  })
-  .then(result => {
-    div.innerHTML = JSON.stringify(result.data)
-  })
+render(<App />, root)

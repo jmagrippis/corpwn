@@ -50,6 +50,13 @@
     "@babel/helper-explode-assignable-expression" "7.0.0-rc.3"
     "@babel/types" "7.0.0-rc.3"
 
+"@babel/helper-builder-react-jsx@^7.0.0-rc.4":
+  version "7.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/@babel/helper-builder-react-jsx/-/helper-builder-react-jsx-7.0.0-rc.4.tgz#f2f419d6ef6b54bdaf17fee5a9bbcdd353686d79"
+  dependencies:
+    "@babel/types" "^7.0.0-rc.4"
+    esutils "^2.0.0"
+
 "@babel/helper-call-delegate@7.0.0-rc.3":
   version "7.0.0-rc.3"
   resolved "https://registry.yarnpkg.com/@babel/helper-call-delegate/-/helper-call-delegate-7.0.0-rc.3.tgz#6a96c63e5a72138f1cfcd9c4bfa99cdd1f650f19"
@@ -125,6 +132,10 @@
 "@babel/helper-plugin-utils@7.0.0-rc.3":
   version "7.0.0-rc.3"
   resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.0.0-rc.3.tgz#f68392896f4f3b90bdf7e72e5cc7127cdd5441fd"
+
+"@babel/helper-plugin-utils@^7.0.0-rc.4":
+  version "7.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.0.0-rc.4.tgz#75fc55485d62174787cb5edc8fad1fc375b7c48f"
 
 "@babel/helper-regex@7.0.0-rc.3":
   version "7.0.0-rc.3"
@@ -241,6 +252,12 @@
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-json-strings/-/plugin-syntax-json-strings-7.0.0-rc.3.tgz#5dc7b1f713de140451446a6c36739c15de857a95"
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-rc.3"
+
+"@babel/plugin-syntax-jsx@^7.0.0-rc.4":
+  version "7.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-jsx/-/plugin-syntax-jsx-7.0.0-rc.4.tgz#b749301cd183d7538044e3cc104828c5577367fd"
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.0.0-rc.4"
 
 "@babel/plugin-syntax-object-rest-spread@7.0.0-rc.3":
   version "7.0.0-rc.3"
@@ -396,6 +413,34 @@
     "@babel/helper-get-function-arity" "7.0.0-rc.3"
     "@babel/helper-plugin-utils" "7.0.0-rc.3"
 
+"@babel/plugin-transform-react-display-name@^7.0.0-rc.4":
+  version "7.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-display-name/-/plugin-transform-react-display-name-7.0.0-rc.4.tgz#9feea28840e4abe422dd633764a12fe6f5007dcc"
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.0.0-rc.4"
+
+"@babel/plugin-transform-react-jsx-self@^7.0.0-rc.4":
+  version "7.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx-self/-/plugin-transform-react-jsx-self-7.0.0-rc.4.tgz#7aa18e71f48790ed060a4efd4fbbd54eb54e1fac"
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.0.0-rc.4"
+    "@babel/plugin-syntax-jsx" "^7.0.0-rc.4"
+
+"@babel/plugin-transform-react-jsx-source@^7.0.0-rc.4":
+  version "7.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx-source/-/plugin-transform-react-jsx-source-7.0.0-rc.4.tgz#8db576ca07f3f8ffaf64a3d11754efeaab7e0f45"
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.0.0-rc.4"
+    "@babel/plugin-syntax-jsx" "^7.0.0-rc.4"
+
+"@babel/plugin-transform-react-jsx@^7.0.0-rc.4":
+  version "7.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx/-/plugin-transform-react-jsx-7.0.0-rc.4.tgz#85aa56045f9852933dc6a23fed6ab3783bf22f32"
+  dependencies:
+    "@babel/helper-builder-react-jsx" "^7.0.0-rc.4"
+    "@babel/helper-plugin-utils" "^7.0.0-rc.4"
+    "@babel/plugin-syntax-jsx" "^7.0.0-rc.4"
+
 "@babel/plugin-transform-regenerator@7.0.0-rc.3":
   version "7.0.0-rc.3"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-regenerator/-/plugin-transform-regenerator-7.0.0-rc.3.tgz#d28f5dae6a2cbb3748abf4b8b89678ea3b1ff029"
@@ -488,6 +533,16 @@
     js-levenshtein "^1.1.3"
     semver "^5.3.0"
 
+"@babel/preset-react@^7.0.0-rc.4":
+  version "7.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/@babel/preset-react/-/preset-react-7.0.0-rc.4.tgz#5532c2382c3ac6d6d6176673934e873e1763b0eb"
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.0.0-rc.4"
+    "@babel/plugin-transform-react-display-name" "^7.0.0-rc.4"
+    "@babel/plugin-transform-react-jsx" "^7.0.0-rc.4"
+    "@babel/plugin-transform-react-jsx-self" "^7.0.0-rc.4"
+    "@babel/plugin-transform-react-jsx-source" "^7.0.0-rc.4"
+
 "@babel/template@7.0.0-rc.3":
   version "7.0.0-rc.3"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.0.0-rc.3.tgz#2ba7d00f86744762632d06a0ffb0494f8443581f"
@@ -513,6 +568,14 @@
 "@babel/types@7.0.0-rc.3":
   version "7.0.0-rc.3"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.0.0-rc.3.tgz#877ebc543b139f4a1e4c9bd8849c25ab9aea8f41"
+  dependencies:
+    esutils "^2.0.2"
+    lodash "^4.17.10"
+    to-fast-properties "^2.0.0"
+
+"@babel/types@^7.0.0-rc.4":
+  version "7.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.0.0-rc.4.tgz#304dbb9097fadcd35a59a53859a0b4c519186b38"
   dependencies:
     esutils "^2.0.2"
     lodash "^4.17.10"
@@ -1760,7 +1823,7 @@ estraverse@^4.1.0, estraverse@^4.1.1:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-4.2.0.tgz#0dee3fed31fcd469618ce7342099fc1afa0bdb13"
 
-esutils@^2.0.2:
+esutils@^2.0.0, esutils@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.2.tgz#0abf4f1caa5bcb1f7a9d8acc6dea4faaa04bac9b"
 
@@ -2731,7 +2794,7 @@ long@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/long/-/long-3.2.0.tgz#d821b7138ca1cb581c172990ef14db200b5c474b"
 
-loose-envify@^1.0.0, loose-envify@^1.3.1:
+loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   dependencies:
@@ -3555,6 +3618,24 @@ react-apollo@^2.1.11:
     hoist-non-react-statics "^2.5.0"
     invariant "^2.2.2"
     lodash "^4.17.10"
+    prop-types "^15.6.0"
+
+react-dom@^16.4.2:
+  version "16.4.2"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.2.tgz#4afed569689f2c561d2b8da0b819669c38a0bda4"
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
+
+react@^16.4.2:
+  version "16.4.2"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.4.2.tgz#2cd90154e3a9d9dd8da2991149fdca3c260e129f"
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
     prop-types "^15.6.0"
 
 read-pkg-up@^1.0.1:
